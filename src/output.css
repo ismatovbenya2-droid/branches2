@@ -44,6 +44,7 @@
     --text-3xl--line-height: calc(2.25 / 1.875);
     --text-4xl: 2.25rem;
     --text-4xl--line-height: calc(2.5 / 2.25);
+    --font-weight-light: 300;
     --font-weight-medium: 500;
     --font-weight-semibold: 600;
     --font-weight-bold: 700;
@@ -225,6 +226,9 @@
   .my-1 {
     margin-block: var(--spacing);
   }
+  .mt-1 {
+    margin-top: var(--spacing);
+  }
   .mt-4 {
     margin-top: calc(var(--spacing) * 4);
   }
@@ -305,6 +309,9 @@
   }
   .h-12 {
     height: calc(var(--spacing) * 12);
+  }
+  .h-32 {
+    height: calc(var(--spacing) * 32);
   }
   .h-36 {
     height: calc(var(--spacing) * 36);
@@ -408,8 +415,14 @@
   .flex-row-reverse {
     flex-direction: row-reverse;
   }
+  .items-baseline {
+    align-items: baseline;
+  }
   .items-center {
     align-items: center;
+  }
+  .items-start {
+    align-items: flex-start;
   }
   .justify-around {
     justify-content: space-around;
@@ -440,6 +453,9 @@
   }
   .gap-10 {
     gap: calc(var(--spacing) * 10);
+  }
+  .gap-14 {
+    gap: calc(var(--spacing) * 14);
   }
   .gap-\[10px\] {
     gap: 10px;
@@ -602,6 +618,9 @@
   .py-14 {
     padding-block: calc(var(--spacing) * 14);
   }
+  .pt-2 {
+    padding-top: calc(var(--spacing) * 2);
+  }
   .pr-\[10px\] {
     padding-right: 10px;
   }
@@ -617,6 +636,10 @@
   .text-2xl {
     font-size: var(--text-2xl);
     line-height: var(--tw-leading, var(--text-2xl--line-height));
+  }
+  .text-3xl {
+    font-size: var(--text-3xl);
+    line-height: var(--tw-leading, var(--text-3xl--line-height));
   }
   .text-4xl {
     font-size: var(--text-4xl);
@@ -637,6 +660,10 @@
   .text-\[15px\] {
     font-size: 15px;
   }
+  .leading-none {
+    --tw-leading: 1;
+    line-height: 1;
+  }
   .leading-relaxed {
     --tw-leading: var(--leading-relaxed);
     line-height: var(--leading-relaxed);
@@ -652,6 +679,10 @@
   .font-extrabold {
     --tw-font-weight: var(--font-weight-extrabold);
     font-weight: var(--font-weight-extrabold);
+  }
+  .font-light {
+    --tw-font-weight: var(--font-weight-light);
+    font-weight: var(--font-weight-light);
   }
   .font-medium {
     --tw-font-weight: var(--font-weight-medium);
